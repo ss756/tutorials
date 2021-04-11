@@ -45,7 +45,7 @@ def Train(df):
         xtest = count_vec.transform(test_df.review)
 
         #initialize the logistic regression model
-        model = linear_model.LogisticRegression()
+        model = linear_model.LogisticRegression(solver= "lbfgs", max_iter= 200)
         model.fit(xtrain, train_df.sentiment)
 
         # make predictions on the test data
