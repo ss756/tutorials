@@ -108,7 +108,7 @@ class convBlock(nn.Module):
 if __name__ == "__main__":
     x = torch.randn(3, 3, 224, 224)
     model = googleNet()
-    output_shape = model(x)[2].shape
+    output_shape = model(x).shape
     print("Output shape is ", output_shape)
 
 
