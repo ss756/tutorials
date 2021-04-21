@@ -92,17 +92,17 @@ class NET(nn.Module):
 
 
 
-def test():
-    x = torch.randn((3, 1, 160, 160))
-    model = NET(in_channels=1, out_channels=1)
-    preds = model(x)
-    assert preds.shape == x.shape
-    print("The predicted shape is ", preds.shape)
-    print("The input shape is ", x.shape)
-
-
-if __name__ == "__main__":
-    test()
+# def test():
+#     x = torch.randn((3, 1, 160, 160))
+#     model = NET(in_channels=1, out_channels=1)
+#     preds = model(x)
+#     assert preds.shape == x.shape
+#     print("The predicted shape is ", preds.shape)
+#     print("The input shape is ", x.shape)
+#
+#
+# if __name__ == "__main__":
+#     test()
 
 
 
